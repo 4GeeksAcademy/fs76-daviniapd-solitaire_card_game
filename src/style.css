@@ -88,17 +88,3 @@
     border-color: #dc3545;
     transform: scale(1.05); 
 }
-
-input {
-    border-radius: 20px;
-    padding: 5px;
-    box-shadow: 3px 2px 11px 3px #242424;
-    width: 120px;
-    
-}
-
-label {
-    background-color: #242424;
-    padding: 2px 4px;
-    border-radius: 10px;
-}

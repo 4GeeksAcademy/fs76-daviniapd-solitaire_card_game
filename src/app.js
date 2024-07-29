@@ -68,38 +68,9 @@ document.querySelector(".btn").addEventListener("click", function() {
   }
 });
 
-function resizeCard() {
-  let heightInput = document.getElementById("heightCard").value;
-  let widthInput = document.getElementById("widthCard").value;
-
-  const maxHeight = 1000;
-  const minHeight = 500;
-  const maxWidth = 1000;
-  const minWidth = 200;
-
-  if (heightInput > maxHeight) {
-    alert("The maximum height value allowed is 1000.", "danger");
-    return;
-  } else if (heightInput < minHeight) {
-    alert("The minimum height value allowed is 500.", "danger");
-    return;
-  }
-
-  if (widthInput > maxWidth) {
-    alert("The maximum width value allowed is 1000.", "danger");
-    return;
-  } else if (widthInput < minWidth) {
-    alert("The minimum width value allowed is 200.", "danger");
-    return;
-  }
-
-  document.getElementById("card").style.height = heightInput + "px";
-  document.getElementById("card").style.width = widthInput + "px";
-}
-
-document.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    resizeCard();
-  }
-});
+// document.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     resizeCard();
+//   }
+// });
