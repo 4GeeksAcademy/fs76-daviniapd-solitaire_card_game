@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random poker card</title>
+    <link rel="icon" href="/Logo-Poker.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="/src/style.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid text-center" id="tablePoker">
+      <div id="alertContainer"></div>
+      <div class="container" id="card">
+        <div class="row suits">
+          <p id="suitLeftTop">
+            <span class="text-danger">♦</span>
+          </p>
+          <p id="suitRightTop">
+            ♠
+          </p>
+        </div>
+        <p id="numberCard">?</p>
+        <div class="row suits">
+          <p id="suitLeftBottom">♣</p>
+          <p id="suitRightBottom"><span class="text-danger">♥</span></p>
+        </div>
+      </div>
+      <button type="button" class="btn">
+        Generate a Poker Card
+      </button>
+      <h1 class="text-danger shadow mt-5">
+        Change the size of the poker card
+      </h1>
+      <div>
+        <label for="heightCard" class="text-danger"><b>Height:</b></label>
+        <input
+          type="number"
+          name="heightCard"
+          id="heightCard"
+          placeholder="height sizes"
+        />
+        <label for="widthCard" class="text-danger"><b>Width:</b></label>
+        <input
+          type="number"
+          name="widthCard"
+          id="widthCard"
+          placeholder="width sizes"
+        />
+        <button onclick="resizeCard()" type="button" class="btn">
+          Resize Card
+        </button>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/151280d658.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/src/app.js"></script>
+  </body>
+</html>
